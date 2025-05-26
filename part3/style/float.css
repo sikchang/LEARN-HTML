@@ -1,0 +1,29 @@
+/* float : 세로 배치된 블럭요소를 "가로 배치" 시키기 위해 */
+
+.container{
+    background-color: hotpink;
+    /* height: 200px; */
+    /* overflow: hidden; */
+}
+.container > div{
+    width: 200px;
+    height: 200px;
+}
+.container .box01{
+    background-color: dodgerblue;
+    float: left;
+
+}
+.container .box02{
+    background-color: orange;
+    float: left;
+}
+.container .box03{
+    background-color: yellowgreen;
+    float: left;
+}
+
+/* p태그를 생성 후 clear를 하면 됨 */
+p{
+    clear: both;
+}

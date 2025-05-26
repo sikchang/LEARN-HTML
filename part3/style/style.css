@@ -1,0 +1,73 @@
+/* 자식의 크기가 있어야지 부모의 크기가 생긴다 */
+.container{
+    background-color: hotpink;
+}
+
+.box01{
+    width: 200px;
+    height: 200px;
+    background-color: dodgerblue;
+}
+
+.box02{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+
+/* 부모에게 크기를 지정했을 때 나오는 상황 */
+.another{
+    width: 400px;
+    height: 600px;
+    background-color: black;
+}
+/* 위 초반 설명 끝 */
+
+.list{
+    background-color: hotpink;
+}
+
+/* list 안에 있는 li들에게만 적용해야함. */
+/* Css에서 한칸 띄어쓰기 : ~안에있는 */
+.list > li{
+    background-color: dodgerblue;
+}
+
+/* 함께 가지고있는 : ex)li.menu */
+/* list 안에 있는 모든 menu만 */
+/* li.menu{
+    
+} */
+
+/* list안에 있는 친자식 menu에게만 */
+/* > : 부모가 자식에게 선택 (친자식 선택자) */
+.list > .menu{
+    background-color: orange;
+}
+
+/* nth-child :  class나 id가 없어도 n번째 를 선택해서 설정이 가능 */
+/* .list > li:nth-child(3){ */
+/* .list > li:last-child{ */
+/* .list > li:first-child{ */
+/* .list > li:first-child{ */
+    /* .list > li:nth-child(odd){ */
+    /* .list > li:nth-child(even){ */
+.list > li:nth-child(2n){
+    background-color: greenyellow;
+}
+
+/* CSS nesting */
+/* &:hover : list에 마우스를 올렸을 때 (부모를 선택할 때 &를 사용)*/
+.list{
+
+    &:hover{
+
+    }
+
+    > li:nth-child(3){
+
+    }
+    > .menu{
+
+    }
+}

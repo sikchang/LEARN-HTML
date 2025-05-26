@@ -1,0 +1,58 @@
+/* 
+    flex box 
+        1. 해당 속성을 주는 것이 부모이냐, 자식에게 주는지 확실히 알아야함.
+    모든 블록요소는 세로배치임
+*/
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    /* 아래 position: absolute;의 기준은 현재 브라우저의 기준이다. */
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    translate:-50% -50%; */
+    /* 부모에게 선언 컨테이너에게 아래 모든 자식들 유연하게 다룰 것 선언
+        display: flex;가 가장 먼저 선언되어야함.
+        flex를 선언하면 보이진 않지만 메인축과 서브축이 생성이 됨
+        메인축은 flex방향에 따라 생성됨(flex의 기본값은 row이니 row생각하면 편함)
+    */
+    /* row가 기본값 */
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    
+    /* 메인축이 기본값 row이기 때문에 가로로만 움직이는중 */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* 메인축 정렬은 space-between이 담당한다. */
+    justify-content: space-between;
+    gap: 10px;
+
+    /* 서브축 시작 */
+    /* 위쪽정렬 "기본값" */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    
+
+    > div{
+        width: 150px;
+        height: 150px;
+        background-color: dodgerblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

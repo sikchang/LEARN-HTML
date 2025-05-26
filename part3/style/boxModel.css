@@ -1,0 +1,60 @@
+/* 
+    네이밍 규칙
+    kebab-case : ease-in-out-bounce
+        - 계층관계를 할 때 사용
+    snake-case : ease_in_out_bounce
+        - 이름으로만 구분하려면 스네이크방식 사용
+    camelCase : easeInOutBounce
+    PascalCase : EaseInOutBounce
+        - pascal은 생성자(constructor), Component(부품), React에서 사용
+*/
+
+
+div{
+    width: 200px;
+    height: 200px;
+}
+
+.box1{
+    background-color: red;
+    /* margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px; */
+    /* margin: 10px 0; */
+    
+    /* 컨텐츠가 1층에 있을 때만 사용 가능 */
+    /* margin: 0 auto;  */
+
+    /* margin: 0 30px; */
+    /* margin-inline: 30px; */
+    /* margin-inline-start: 30px; */
+    /* margin-inline-end: 30px; */
+
+    /* margin: 30px 0; */
+    /* margin-block: 30px; */
+    /* margin-block-start: 30px; */
+    /* margin-block-end: 30px; */
+
+}
+
+.box2{
+    background-color: dodgerblue;
+    padding: 10px 20px 30px 40px;
+}
+
+.box3{
+    background-color: orange;
+    border: 10px solid red;
+    /* border-radius: 10px 20px 30px 40px; */
+    /* border-radius: 50%; */
+    border-top-right-radius: 30px;
+    /* margin-left: 30px; */
+    padding-left: 30px;
+}
+
+.box4{
+    box-sizing: border-box;
+    background-color: greenyellow;
+    border: 5px solid black;
+}

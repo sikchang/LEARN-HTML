@@ -1,0 +1,108 @@
+body{
+    height: 5000px;
+}
+/* 
+Position : 위치 속성 
+    relative : 컨텐츠 이동 시 1층에서만 이동 하기 때문에 잘 사용하지 않는다.
+        margin: 0 auto; Position에서 유일하게 사용 가능
+    absolute : 부모에게 position : absolute;으로 기준점을 잡아줘야함.
+    fixed : 브라우저 기준으로 
+        - 부모 기준으로 transform, filter, perspective, will-change, backdrop-filter가 
+            있으면 작동이 안될 수 있음
+*/
+
+.box01{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* margin-left: 100px; */
+    position: relative;
+    margin: 0 auto;
+    /* left: 100px; */
+    /* top: 100px; */
+}
+
+.box02{
+    width: 200px;
+    height: 200px;
+    background-color: dodgerblue;
+}
+
+.container{
+    width: 600px;
+    height: 600px;
+    background-color: hotpink;
+    position: relative;
+}
+
+.container > div{
+    width: 200px;
+    height: 200px;
+}
+
+.container .list01{
+    background-color: green;
+    position: sticky;
+    /* position: absolute; */
+    /* x축 1개 */
+    /* y축 1개 */
+    left: 0;
+    top: 0;
+    z-index: 10;
+    /* z-index는 position이 있어야만 사용이 가능하다. */
+}
+
+.container .list02{
+    background-color: orange;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.container .list03 {
+    background-color: aqua;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.container .list04 {
+    background-color: teal;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.container .list05 {
+    background-color: khaki;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* transform: translateX(-50%) translateY(-50%); */
+    /* transform: translate(-50%, -50%); 순서 X Y */
+    translate: -50% -50%;
+    /* margin-left: -100px; */
+    /* top: 50%; */
+    /* margin-top: -100px; */
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    
+}
+
+
+/* fixed 는 팝업창을 생각하면 금방 생각남 */
+.box03{
+    width: 400px;
+    height: 200px;
+    /* vh 브라우저 화면 전체 */
+    /* height: 100vh; */
+    background-color: rgb(248, 251, 92);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    /* transform: translateX(100%); */
+
+}

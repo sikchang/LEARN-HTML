@@ -14,12 +14,13 @@ p{
     background-color: orange;
 }
 
-/* 속성 선택자 */
+/* 속성 선택자 transition 마우스커서 올리면 색상 변화 */
 p[name="tiger"]{
     background-color: cyan;
     transition: all 1.7s;
 }
 
+/* 마우스커서 올리면 이동 및 색상 변화 :hover */
 p[name="tiger"]:hover{
     background-color: chartreuse;
     transform: translateX(20px) rotate(360deg);

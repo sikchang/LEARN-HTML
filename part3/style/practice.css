@@ -1,0 +1,31 @@
+
+
+.color_li3_a {
+    color: red;
+}
+
+.test_box{
+    background-color: gray;
+
+    > .first_box{
+        border: 1px solid blue;
+        background-color: yellow;
+    }
+}
+
+.test_box ul .text_font02 {
+    /* transform: scale(2) translateX(30px); */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.test_box ul .text_font03 {
+    /* color: red; */
+    text-decoration: underline;
+}
+
+
+.footer_box:hover{
+    transform: all 1.8s;
+    background-color: hotpink;
+}
